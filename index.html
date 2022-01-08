@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Kishor</title>
+  </head>
+  <body>
+    <div class="name"><h1>KISHOR ROY</h1></div>
+
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="__#" class="nav__link"
+            >Home
+            <span class="dots"
+              ><span class="dot"></span><span class="dot"></span
+              ><span class="dot"></span></span
+          ></a>
+        </li>
+        <li>
+          <a href="work.html" class="nav__link"
+            >Work<span class="dots"
+              ><span class="dot"></span><span class="dot"></span
+              ><span class="dot"></span></span
+          ></a>
+        </li>
+        <li>
+          <a href="about.html" class="nav__link"
+            >About<span class="dots"
+              ><span class="dot"></span><span class="dot"></span
+              ><span class="dot"></span></span
+          ></a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav__link"
+            >Contact<span class="dots"
+              ><span class="dot"></span><span class="dot"></span
+              ><span class="dot"></span></span
+          ></a>
+        </li>
+        <li>
+          <a href="blog.html" class="nav__link"
+            >Blog<span class="dots"
+              ><span class="dot"></span><span class="dot"></span
+              ><span class="dot"></span></span
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      document
+        .querySelector(".nav")
+        .addEventListener("mouseover", function (e) {
+          // console.log(e.target);
+
+          // Matching strategy
+          if (e.target.classList.contains("nav__link")) {
+            e.target.classList.add("active");
+          }
+        });
+
+      document.querySelector(".nav").addEventListener("mouseout", function (e) {
+        // console.log(e.target);
+
+        // Matching strategy
+        if (e.target.classList.contains("nav__link")) {
+          e.target.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
